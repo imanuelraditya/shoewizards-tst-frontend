@@ -19,7 +19,7 @@ export default function Sidebar(props: any) {
     const getUser = async () => {
         try {
             const response = await axios.post(
-                "https://shoewizards.azurewebsites.net/authentications/current_user",
+                "https://shoewizardsdb.azurewebsites.net/docsauthentications/current_user",
                 null,
                 {
                     headers: {

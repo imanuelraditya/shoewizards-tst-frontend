@@ -27,7 +27,7 @@ export default function LoginForm() {
         try {
             // Make a POST request to the login endpoint
             const response = await axios.post(
-                "https://shoewizards.azurewebsites.net/authentications/login",
+                "https://shoewizardsdb.azurewebsites.net/docsauthentications/login",
                 formData,
             );
 

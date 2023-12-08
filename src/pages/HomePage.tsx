@@ -19,7 +19,7 @@ export default function HomePage(){
 
     const getProducts = async () => {
         try {
-            const productResponse = await axios.get("https://shoewizards.azurewebsites.net/products/products")
+            const productResponse = await axios.get("https://shoewizardsdb.azurewebsites.net/docsproducts/products")
             const productData = productResponse.data
 
             const result = productData.map((product: ProductData) => ({

@@ -24,7 +24,7 @@ export default function ConsultPage(){
     const getUser = async () => {
         try {
             const response = await axios.post(
-                "https://shoewizards.azurewebsites.net/authentications/current_user",
+                "https://shoewizardsdb.azurewebsites.net/docsauthentications/current_user",
                 null,
                 {
                     headers: {
@@ -58,7 +58,7 @@ export default function ConsultPage(){
 
         try {
             const response = await axios.post(
-                `https://shoewizards.azurewebsites.net/shoes/shoes?shoetype=${shoetype}&shoesize=${shoesize}&shoecolor=${shoecolor}&shoebrand=${shoebrand}&initialcondition=${initialcondition}`,
+                `https://shoewizardsdb.azurewebsites.net/docsshoes/shoes?shoetype=${shoetype}&shoesize=${shoesize}&shoecolor=${shoecolor}&shoebrand=${shoebrand}&initialcondition=${initialcondition}`,
                 null,
                 {
                     headers: {
@@ -76,7 +76,7 @@ export default function ConsultPage(){
             if (response.status === 200) {
                 try {
                     const response = await axios.post(
-                        `https://shoewizards.azurewebsites.net/consultations/consultations?userid=${userid}&shoeid=${shoeid}`,
+                        `https://shoewizardsdb.azurewebsites.net/docsconsultations/consultations?userid=${userid}&shoeid=${shoeid}`,
                         null,
                         {
                             headers: {
@@ -90,7 +90,7 @@ export default function ConsultPage(){
                     if (response.status === 200) {
                         try {
                             const response = await axios.get(
-                                `https://shoewizards.azurewebsites.net/consultations/consultations?userid=${userid}&shoeid=${shoeid}`,
+                                `https://shoewizardsdb.azurewebsites.net/docsconsultations/consultations?userid=${userid}&shoeid=${shoeid}`,
                                 {
                                     headers: {
                                         Accept: "application/json",
@@ -109,7 +109,7 @@ export default function ConsultPage(){
                             if (response.status === 200) {
                                 try {
                                     await axios.post(
-                                        `https://shoewizards.azurewebsites.net/consultations/checkout_consultation?userid=${userid}&shoeid=${shoeid}&addClick=true`,
+                                        `https://shoewizardsdb.azurewebsites.net/docsconsultations/checkout_consultation?userid=${userid}&shoeid=${shoeid}&addClick=true`,
                                         null,
                                         {
                                             headers: {
