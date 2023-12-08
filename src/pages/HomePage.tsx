@@ -67,7 +67,7 @@ export default function HomePage(){
             {/* Main content area */}
             <div className="col-span-5 flex flex-col">
                 {/* Header */}
-                <div className="flex flex-col items-center justify-center h-36 w-full bg-[url('../../public/images/banner.png')]">
+                <div className="flex flex-col items-center justify-center h-36 w-full bg-[url('../../images/banner.png')]">
                     <h1 className="text-white text-4xl font-bold ps-9 mb-3">
                         Step into Perfection
                     </h1>

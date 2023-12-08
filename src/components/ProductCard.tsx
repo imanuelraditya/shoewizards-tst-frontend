@@ -16,7 +16,7 @@ export default function ProductCard({ data }: { data: Product[] }) {
             <a>
                 <div className="w-52 h-72 bg-white rounded-3xl shadow-md hover:shadow-xl">
                     <div className="flex items-center h-32 w-full">
-                        <img className="object-cover h-full w-full rounded-3xl" src={`../../public/images/${image}.png`} alt={productname} />
+                        <img className="object-cover h-full w-full rounded-3xl" src={`../../images/${image}.png`} alt={productname} />
                     </div>
                     <div className="mt-3 px-4">
                         <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">{productname}</h5>

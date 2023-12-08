@@ -69,7 +69,7 @@ export default function CartCard({ data }: { data: Product[] }) {
                 <div className="flex flex-col justify-center items-center w-1/6">
                     <div className="flex flex-row items-center h-24 w-40 rounded-3xl md:h-24 md:w-40 md:rounded-3xl">
                         <img
-                            src={`../../public/images/${image}.png`}
+                            src={`../../images/${image}.png`}
                             alt={productname}
                             className="object-cover h-full w-full rounded-3xl mb-4"
                         ></img>
