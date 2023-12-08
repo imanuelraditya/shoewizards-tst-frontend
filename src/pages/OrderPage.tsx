@@ -15,7 +15,7 @@ export default function OrderPage() {
     const getTransaction = async () => {
         try {
             const response = await axios.get(
-                "https://shoewizardsdb.azurewebsites.net/docssmartcart-transaction/transaction",
+                "https://shoewizardsdb.azurewebsites.net/smartcart-transaction/transaction",
                 {
                     headers: {
                         Accept: "application/json",

@@ -19,7 +19,7 @@ export default function CartPage(){
 
     const getProducts = async () => {
         try {
-            const productResponse = await axios.get("https://shoewizardsdb.azurewebsites.net/docssmartcart-cart/cart", {
+            const productResponse = await axios.get("https://shoewizardsdb.azurewebsites.net/smartcart-cart/cart", {
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json",
@@ -65,7 +65,7 @@ export default function CartPage(){
     const handleCheckout = async () => {
         try {
             const response = await axios.post(
-                `https://shoewizardsdb.azurewebsites.net/docssmartcart-transaction/transaction`,
+                `https://shoewizardsdb.azurewebsites.net/smartcart-transaction/transaction`,
                 null,
                 {
                     headers: {

@@ -16,7 +16,7 @@ export default function CartCard({ data }: { data: Product[] }) {
         const handleAdd = async () => {
             try {
                 const response = await axios.post(
-                    `https://shoewizardsdb.azurewebsites.net/docssmartcart-cart/cart_addproduct?id_product=${product_id}&addClick=true`,
+                    `https://shoewizardsdb.azurewebsites.net/smartcart-cart/cart_addproduct?id_product=${product_id}&addClick=true`,
                     null,
                     {
                         headers: {
@@ -36,7 +36,7 @@ export default function CartCard({ data }: { data: Product[] }) {
         const handleRemove = async () => {
             try {
                 const response = await axios.post(
-                    `https://shoewizardsdb.azurewebsites.net/docssmartcart-cart/cart_removeproduct?id_product=${product_id}&addClick=false`,
+                    `https://shoewizardsdb.azurewebsites.net/smartcart-cart/cart_removeproduct?id_product=${product_id}&addClick=false`,
                     null,
                     {
                         headers: {

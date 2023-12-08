@@ -25,7 +25,7 @@ export default function RegisterForm() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                `https://shoewizardsdb.azurewebsites.net/docsusers/users?firstname=${firstname}&lastname=${lastname}&address=${address}&email=${email}&username=${username}&password=${password}&phonenumber=${phonenumber}&role=customer`,
+                `https://shoewizardsdb.azurewebsites.net/users/users?firstname=${firstname}&lastname=${lastname}&address=${address}&email=${email}&username=${username}&password=${password}&phonenumber=${phonenumber}&role=customer`,
             );
             
             console.log(response);
